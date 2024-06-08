@@ -17,6 +17,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [username, setUsername] = useState("");
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
     const fetchTransactions = async () => {
@@ -28,7 +29,7 @@ const Home = () => {
         console.log("Response data:", response.data);
         if (response.data && response.data.length > 0) {
           setItems(response.data);
-          setUsername(response.data[0].username); // Assuming all items have the same username
+          setUsername(response.data[0].username);
         } else {
           setError("No transactions found.");
         }

@@ -9,7 +9,7 @@ const Transactions = () => {
 
   useEffect(() => {
     axios
-      .get("https://firescrimbackend.onrender.com/api/items")
+      .get("https://firescrimbackend.onrender.com/items")
       .then((response) => {
         setItems(response.data);
       })

@@ -8,7 +8,6 @@ import { useCookies } from "react-cookie";
 const Login = () => {
   const [username, setusername] = useState();
   const [password, setpassword] = useState();
-  // const [cookie,setCookie] = useCookies(['username']);
   let a = document.getElementById("error");
   const navigate = useNavigate();
 
