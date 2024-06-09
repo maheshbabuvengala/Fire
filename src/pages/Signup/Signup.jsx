@@ -9,6 +9,7 @@ const Signup = () => {
   const [username, setusername] = useState();
   const [password, setpassword] = useState();
   const [freefireid, setfreefireid] = useState();
+  const [phoneno, setphoneno] = useState();
   const navigate = useNavigate();
   let a = document.getElementById("error");
 
@@ -20,6 +21,7 @@ const Signup = () => {
         username,
         password,
         freefireid,
+        phoneno
       })
       .then((result) => {
         console.log(result);
@@ -66,6 +68,13 @@ const Signup = () => {
             id=""
             placeholder="Freefire-Id"
             onChange={(e) => setfreefireid(e.target.value)}
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Phone no"
+            onChange={(e) => setphoneno(e.target.value)}
           />
           <div className="check">
             <input type="checkbox" name="" id="" />
