@@ -80,7 +80,7 @@ const Signup = () => {
             <input type="checkbox" name="" id="" />
             <a href="">Accept terms&conditions</a>
           </div>
-          <input type="submit" name="" id="" />
+          <input type="submit" name="" id="" className='submitbutt'/>
         </form>
         <div className="sec">
           <p>Already a member ?</p>
