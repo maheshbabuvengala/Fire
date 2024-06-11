@@ -52,7 +52,7 @@ const Login = () => {
             placeholder="Password"
             onChange={(e) => setpassword(e.target.value)}
           />
-          <input type="submit" name="" id="" />
+          <input type="submit" name="" id="" className='submitbutt'/>
         </form>
         <div className="sec">
           <p>Not a member ?</p>
