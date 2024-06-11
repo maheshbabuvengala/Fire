@@ -27,6 +27,7 @@
   gap: 30px;
   flex-direction: column;
   width: 250px;
+  justify-content: center;
 }
 .wrapper h1 {
   font-size: 40px;
