@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import Scanner from "../../assets/Scanner.jpg";
+import Scanner from "../../assets/Scanner_120.jpg";
 import "./Payment.css";
 import Paytm from "../../assets/paytm.jpg";
 import phonepe from "../../assets/phonepe.jpg";
