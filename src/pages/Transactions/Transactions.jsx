@@ -8,14 +8,27 @@ const Transactions = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://firescrimbackend.onrender.com/items")
-      .then((response) => {
-        setItems(response.data);
-      })
-      .catch((error) => {
-        console.error("There was an error fetching the data!", error);
-      });
+    const fetchTransactions = async () => {
+      try {
+        const response = await axios.get(
+          "https://firescrimbackend.onrender.com/items",
+          { withCredentials: true }
+        );
+        console.log("Response data:", response.data);
+        if (response.data && response.data.length > 0) {
+          setItems(response.data);
+        } else {
+          setError("No transactions found.");
+        }
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching transactions:", error);
+        setError("Error fetching transactions. Please try again later.");
+        setLoading(false);
+      }
+    };
+
+    fetchTransactions();
   }, []);
 
   return (

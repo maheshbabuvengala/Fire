@@ -3,15 +3,23 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [passwordVisible, setPasswordVisible] = useState(false);
+
   const navigate = useNavigate();
 
   axios.defaults.withCredentials = true;
+
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -51,12 +59,19 @@ const Login = () => {
             type="text"
             placeholder="User Id"
             onChange={(e) => setUsername(e.target.value)}
+            required
           />
-          <input
-            type="password"
-            placeholder="Password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
+          <div className="password-container">
+            <input
+              type={passwordVisible ? "text" : "password"}
+              placeholder="password"
+              className="password-input"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <span className="eye-icon" onClick={togglePasswordVisibility}>
+              <FontAwesomeIcon icon={passwordVisible ? faEyeSlash : faEye} />
+            </span>
+          </div>
           <input type="submit" className="submitbutt" disabled={loading} />
           {loading && <div className="loader"></div>}
         </form>

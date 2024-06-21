@@ -8,6 +8,7 @@ import Payment from "./pages/Payment/Payment";
 import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import Terms from "./pages/Terms";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/termsandconditions" element={<TermsAndConditions />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </BrowserRouter>
     </div>
