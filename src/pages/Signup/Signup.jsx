@@ -9,11 +9,13 @@ const Signup = () => {
   const [username, setusername] = useState();
   const [password, setpassword] = useState();
   const [freefireid, setfreefireid] = useState();
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   let a = document.getElementById("error");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
     axios
       .post("https://firescrimbackend.onrender.com/register", {
         name,
@@ -22,7 +24,9 @@ const Signup = () => {
         freefireid,
       })
       .then((result) => {
+        setLoading(false);
         console.log(result);
+
         if (result.data == "user already exists") {
           a.textContent = "user already exists";
           // alert("user already exists")
@@ -30,7 +34,10 @@ const Signup = () => {
           navigate("./login");
         }
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        setLoading(false);
+        console.log(err);
+      });
   };
 
   return (
@@ -45,6 +52,7 @@ const Signup = () => {
             id=""
             placeholder="Name"
             onChange={(e) => setname(e.target.value)}
+            required
           />
           <input
             type="text"
@@ -71,8 +79,16 @@ const Signup = () => {
             <input type="checkbox" name="" id="" />
             <a href="">Accept terms&conditions</a>
           </div>
-          <input type="submit" name="" id="" />
+          <span></span>
+          <input
+            type="submit"
+            name=""
+            id=""
+            className="submitbutt"
+            disabled={loading}
+          />
         </form>
+        {loading && <div className="loader"></div>}
         <div className="sec">
           <p>Already a member ?</p>
           <Link to="/login">Login</Link>

@@ -17,7 +17,7 @@
   max-width: 100%;
 }
 
-.wrapper {
+/* .wrapper {
   background: hsla(0, 0%, 0%, 0.263);
   padding: 50px;
   border-radius: 15px;
@@ -27,7 +27,16 @@
   justify-content: space-between;
   gap: 30px;
   box-shadow: 0 5px 13px black;
-}
+  height: 100vh;
+
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  /* background: #fff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+} */
 
 .wrapper form {
   height: 80%;
@@ -82,7 +91,7 @@ input {
 .check a {
   margin-left: 10px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 18px;
 }
 .anchor:hover {
@@ -91,4 +100,33 @@ input {
 }
 .error {
   color: white;
+}
+.submitbutt {
+  padding: 0px 10px;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .sec p {
+    font-size: 18px;
+    margin-top: 2px;
+  }
+  .check a {
+    color: white;
+    font-size: 16px;
+  }
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* .wrapper {
+} */
+
+.error {
+  color: red;
+  margin-bottom: 10px;
 }

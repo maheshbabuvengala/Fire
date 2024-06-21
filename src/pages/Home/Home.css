@@ -31,11 +31,11 @@
   /* background: -webkit-linear-gradient(180deg,rgb(7, 248, 7),red );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-  color: red;
+  color: white;
   font-weight: 600;
 }
 .fire {
-  color: rgb(255, 77, 0);
+  color: white;
 }
 
 .li {
