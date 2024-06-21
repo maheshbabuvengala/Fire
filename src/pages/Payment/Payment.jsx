@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import Scanner from "../../assets/Scanner.jpg";
+import Scanner from "../../assets/Scanner_120.jpg";
 import "./Payment.css";
 import Paytm from "../../assets/paytm.jpg";
 import phonepe from "../../assets/phonepe.jpg";
@@ -23,6 +23,7 @@ const Payment = () => {
   const [error, setError] = useState(null);
   const [user, setUser] = useState("");
   const [freefire, setfreefire] = useState("");
+  const [phonenos, setphonenos] = useState("");
 
   useEffect(() => {
     const fetchTransactions = async () => {
@@ -34,6 +35,7 @@ const Payment = () => {
         setTransactions(response.data);
         setUser(response.data[0].username);
         setfreefire(response.data[0].freefireid);
+        setphonenos(response.data[0].phoneno)
         setLoading(false);
       } catch (error) {
         console.error("Error fetching transactions:", error);
@@ -48,6 +50,7 @@ const Payment = () => {
   const username = user;
   const freefireid = freefire;
   const status = "Success";
+  const phoneno = phonenos;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -57,6 +60,7 @@ const Payment = () => {
         freefireid,
         upiid,
         status,
+        phoneno
       })
       .then(navigate("/home"))
       .catch(err)(console.log(err));

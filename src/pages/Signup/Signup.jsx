@@ -22,6 +22,7 @@ const Signup = () => {
         username,
         password,
         freefireid,
+        phoneno,
       })
       .then((result) => {
         setLoading(false);
@@ -74,6 +75,13 @@ const Signup = () => {
             id=""
             placeholder="Freefire-Id"
             onChange={(e) => setfreefireid(e.target.value)}
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Phone no"
+            onChange={(e) => setphoneno(e.target.value)}
           />
           <div className="check">
             <input type="checkbox" name="" id="" />
