@@ -14,7 +14,6 @@ const Transactions = () => {
           "https://firescrimbackend.onrender.com/items",
           { withCredentials: true }
         );
-        console.log("Response data:", response.data);
         if (response.data && response.data.length > 0) {
           setItems(response.data);
         } else {
