@@ -31,11 +31,11 @@
   /* background: -webkit-linear-gradient(180deg,rgb(7, 248, 7),red );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-  color: white;
+  color: red;
   font-weight: 600;
 }
 .fire {
-  color: white;
+  color: rgb(255, 77, 0);
 }
 
 .li {
@@ -64,6 +64,8 @@
 
 .p {
   padding-left: 40px;
+  color: whitesmoke;
+  font-weight: 800;
 }
 
 .price {
@@ -130,4 +132,26 @@
   from {
     left: 500px;
   }
+}
+
+.whatsapp {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.cl {
+  padding-left: 23%;
+}
+.cll {
+  padding-left: 50px;
+}
+.clll {
+  margin-left: 15px;
+  padding: 7px;
+  font-size: larger;
+}
+.cli {
+  margin-left: 5px;
+  padding: 7px;
+  font-size: larger;
 }

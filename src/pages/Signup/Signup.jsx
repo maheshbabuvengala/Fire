@@ -84,7 +84,7 @@ const Signup = () => {
             <input
               type={passwordVisible ? "text" : "password"}
               placeholder="password"
-              className="pass"
+              className=""
               onChange={(e) => setpassword(e.target.value)}
               required
             />

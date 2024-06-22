@@ -3,6 +3,7 @@ import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState();
@@ -24,8 +25,9 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg ">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/home">
-              <h1>FireScrim</h1>
+            <Link className="navbar-brand logoo" to="/home">
+              <img src={Logo} alt="" className="logo" />
+              <h1 className="logo-name">FireScrim</h1>
             </Link>
             <button
               className="navbar-toggler"

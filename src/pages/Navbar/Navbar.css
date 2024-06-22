@@ -2,3 +2,18 @@
   background-color: rgb(232, 232, 232);
   /* height: 70px; */
 }
+
+.logo {
+  width: 36px;
+}
+
+.logoo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-name {
+  margin-top: 7px;
+}

@@ -1,6 +1,5 @@
 .body {
-  background: url("../../assets/Designer.jpg");
-  background-size: cover;
+  background: url("../../assets/Designer.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,22 +9,18 @@
 
 .wrapper {
   background: hsla(0, 0%, 0%, 0.263);
-  padding: 50px;
+  padding: 20px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  box-shadow: 0 5px 13px black;
-  height: 100vh;
-  position: relative;
-  width: 300px;
-  padding: 20px;
-  /* background: #fff; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  height: 100vh;
+  width: 300px;
   text-align: center;
+  position: relative;
 }
 
 .wrapper form {
@@ -37,6 +32,7 @@
   width: 250px;
   justify-content: center;
 }
+
 .wrapper h1 {
   font-size: 40px;
   margin-top: 10px;
@@ -48,6 +44,8 @@ input {
   height: 45px;
   border-radius: 8px;
   text-align: center;
+  width: 100%; /* Ensure the input takes the full width of the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 #submit {
@@ -75,6 +73,7 @@ input {
 .sec a:hover {
   text-decoration: underline;
 }
+
 .error {
   color: white;
 }
@@ -82,7 +81,6 @@ input {
 .loader {
   width: 1px;
   aspect-ratio: 1;
-  /* border: 5px solid #2519ff; */
   border-radius: 50%;
   position: relative;
 }
@@ -100,19 +98,15 @@ input {
   0% {
     clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
   }
-
   25% {
     clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
   }
-
   50% {
     clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
   }
-
   75% {
     clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
   }
-
   100% {
     clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
   }
@@ -125,21 +119,14 @@ input {
   padding-top: 0;
 }
 
-.password-input {
-  width: 80%;
-  padding: 10px;
-  padding-right: 40px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  height: auto;
-}
-
 .eye-icon {
   position: absolute;
-  right: 30px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   color: #aaa;
+}
+.submitbutt {
+  width: 100px;
 }

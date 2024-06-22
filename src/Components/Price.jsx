@@ -7,7 +7,7 @@ const Price = (props) => {
       <p className="lii"></p>
       <h2>
         {props.t1}
-        <sup>{props.t2}</sup> Price
+        <sup>{props.t2}</sup> squad Price
       </h2>
 
       <h3>

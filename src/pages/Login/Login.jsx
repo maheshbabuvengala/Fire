@@ -65,7 +65,7 @@ const Login = () => {
             <input
               type={passwordVisible ? "text" : "password"}
               placeholder="password"
-              className="password-input"
+              className=""
               onChange={(e) => setPassword(e.target.value)}
             />
             <span className="eye-icon" onClick={togglePasswordVisibility}>

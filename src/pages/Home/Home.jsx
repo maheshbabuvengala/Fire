@@ -47,7 +47,8 @@ const Home = () => {
   return (
     <div className="content">
       <Navbar />
-      <h1 style={{ color: "rgb(255, 77, 0)", fontWeight: "800" }}>
+      <h1 style={{ color: "#50E3C2", fontWeight: "800" }}>
+        <br />
         Welcome: {username}
         <span>&#128591;</span>
       </h1>
@@ -95,7 +96,12 @@ const Home = () => {
           </div>
           <div className="col-sm-4">
             <h5>
-              Whatsapp <IoLogoWhatsapp />
+              <a
+                href={"https://chat.whatsapp.com/Frk5VCUSc5dGRqe8qZMp90"}
+                className="whatsapp"
+              >
+                Whatsapp <IoLogoWhatsapp />
+              </a>
             </h5>
           </div>
           <div className="col-sm-4">
