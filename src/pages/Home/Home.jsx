@@ -34,7 +34,7 @@ const Home = () => {
         }
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching transactions:", error);
+        // console.error("Error fetching transactions:", error);
         setError("Error fetching transactions. Please try again later.");
         setLoading(false);
       }
