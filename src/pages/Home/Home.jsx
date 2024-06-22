@@ -97,7 +97,7 @@ const Home = () => {
           <div className="col-sm-4">
             <h5>
               <a
-                href={"https://chat.whatsapp.com/Frk5VCUSc5dGRqe8qZMp90"}
+                href={"https://whatsapp.com/channel/0029VadqqHdBqbr1miXpm43e"}
                 className="whatsapp"
               >
                 Whatsapp <IoLogoWhatsapp />
