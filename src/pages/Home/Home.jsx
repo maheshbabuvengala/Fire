@@ -26,7 +26,6 @@ const Home = () => {
           "https://firescrimbackend.onrender.com/api/items",
           { withCredentials: true }
         );
-        console.log("Response data:", response.data);
         if (response.data && response.data.length > 0) {
           setItems(response.data);
           setUsername(response.data[0].username);
