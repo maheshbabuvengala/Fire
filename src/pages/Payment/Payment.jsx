@@ -90,6 +90,7 @@ const Payment = () => {
                 type="text"
                 name="utr"
                 id="utr"
+                required
                 className="input"
                 placeholder="enter according to your payment app"
                 onChange={(e) => setupiid(e.target.value)}
