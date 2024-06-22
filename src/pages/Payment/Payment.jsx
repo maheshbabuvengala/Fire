@@ -49,7 +49,7 @@ const Payment = () => {
 
   const username = user;
   const freefireid = freefire;
-  const status = "Success";
+  const status = "Pending";
   const phoneno = phonenos;
 
   const handleSubmit = (e) => {
