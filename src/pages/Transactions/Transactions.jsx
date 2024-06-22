@@ -68,7 +68,7 @@ const Transactions = () => {
           <td className='tata'>655498522</td>
           <td className='tata'>5452236565</td>
           <td className='tata'>Success</td> */}
-              <td colSpan="4">no results.</td>
+              <td colSpan="4">No Transcations found</td>
             </tr>
           )}
         </table>
