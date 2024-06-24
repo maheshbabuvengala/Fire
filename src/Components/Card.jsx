@@ -17,7 +17,7 @@ const Card = () => {
             <div className="row c">
               <div className="col cll">
                 <h3 className="p" style={{ fontWeight: "800" }}>
-                  Date:24/06/24
+                  Date:30/06/24
                 </h3>
               </div>
             </div>
@@ -54,7 +54,7 @@ const Card = () => {
             <div className="row c">
               <div className="col cl">
                 <h3 className="p" style={{ fontWeight: "800" }}>
-                  Date:24/06/24
+                  Date:30/06/24
                 </h3>
               </div>
             </div>
@@ -91,7 +91,7 @@ const Card = () => {
             <div className="row c">
               <div className="col cl">
                 <h3 className="p" style={{ fontWeight: "800" }}>
-                  Date:24/06/24
+                  Date:30/06/24
                 </h3>
               </div>
             </div>
