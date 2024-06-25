@@ -68,7 +68,7 @@ const Signup = () => {
             type="text"
             name=""
             id=""
-            placeholder="Name"
+            placeholder="Free Fire Name"
             onChange={(e) => setname(e.target.value)}
             required
           />

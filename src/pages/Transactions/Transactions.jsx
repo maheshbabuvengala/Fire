@@ -14,7 +14,6 @@ const Transactions = () => {
           "https://firescrimbackend.onrender.com/items",
           { withCredentials: true }
         );
-        console.log("Response data:", response.data);
         if (response.data && response.data.length > 0) {
           setItems(response.data);
         } else {
@@ -22,7 +21,7 @@ const Transactions = () => {
         }
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching transactions:", error);
+        //console.error("Error fetching transactions:", error);
         setError("Error fetching transactions. Please try again later.");
         setLoading(false);
       }
@@ -69,7 +68,7 @@ const Transactions = () => {
           <td className='tata'>655498522</td>
           <td className='tata'>5452236565</td>
           <td className='tata'>Success</td> */}
-              <td colSpan="4">no results.</td>
+              <td colSpan="4">No Transcations found</td>
             </tr>
           )}
         </table>

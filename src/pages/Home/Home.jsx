@@ -26,7 +26,6 @@ const Home = () => {
           "https://firescrimbackend.onrender.com/api/items",
           { withCredentials: true }
         );
-        console.log("Response data:", response.data);
         if (response.data && response.data.length > 0) {
           setItems(response.data);
           setUsername(response.data[0].name);
@@ -35,7 +34,7 @@ const Home = () => {
         }
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching transactions:", error);
+        // console.error("Error fetching transactions:", error);
         setError("Error fetching transactions. Please try again later.");
         setLoading(false);
       }
@@ -97,7 +96,7 @@ const Home = () => {
           <div className="col-sm-4">
             <h5>
               <a
-                href={"https://chat.whatsapp.com/Frk5VCUSc5dGRqe8qZMp90"}
+                href={"https://whatsapp.com/channel/0029VadqqHdBqbr1miXpm43e"}
                 className="whatsapp"
               >
                 Whatsapp <IoLogoWhatsapp />
