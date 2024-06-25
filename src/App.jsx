@@ -9,6 +9,7 @@ import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import Terms from "./pages/Terms";
+import EditInfo from "./pages/EditInfo/EditInfo";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/termsandconditions" element={<TermsAndConditions />} />
           <Route path="/terms" element={<Terms />} />
+          {/* <Route path="/profile" element={<Profile />} /> */}
+          <Route path="/profile" element={<EditInfo />} />
         </Routes>
       </BrowserRouter>
     </div>

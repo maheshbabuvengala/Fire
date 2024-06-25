@@ -29,7 +29,7 @@ const Home = () => {
         console.log("Response data:", response.data);
         if (response.data && response.data.length > 0) {
           setItems(response.data);
-          setUsername(response.data[0].username);
+          setUsername(response.data[0].name);
         } else {
           setError("No transactions found.");
         }

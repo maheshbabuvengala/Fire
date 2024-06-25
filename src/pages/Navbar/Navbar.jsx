@@ -52,6 +52,11 @@ const Navbar = () => {
                     <h3>My Transactions</h3>
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/profile">
+                    <h3>My Profile</h3>
+                  </Link>
+                </li>
               </ul>
               <span>
                 <button className="btn btn-primary btn-lg">
