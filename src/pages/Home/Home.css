@@ -17,23 +17,21 @@
   height: auto;
   background-size: cover;
 }
+
 .l {
   font-weight: 700;
 }
+
 .welcome {
-  /* background: -webkit-linear-gradient(red, rgb(7, 248, 7));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
   color: rgb(9, 117, 38);
   font-weight: 500;
 }
+
 .to-the {
-  /* background: -webkit-linear-gradient(180deg,rgb(7, 248, 7),red );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
   color: red;
   font-weight: 600;
 }
+
 .fire {
   color: rgb(255, 77, 0);
 }
@@ -43,23 +41,24 @@
   height: 4px;
   background: linear-gradient(90deg, #ff0000, #00ff00);
   border-radius: 2px;
-  margin-top: 8px;
 }
 
 .box {
-  height: 250px;
-  width: 400px;
+  height: 300px; /* Increased height to accommodate more content */
+  width: 450px;
   align-items: center;
   justify-content: center;
   margin: 10px;
   border-radius: 15px;
   background-image: url("../../assets/cardbg.webp");
   background-size: cover;
-  background-color: black;
+  z-index: -10;
+  opacity: 0.5;
 }
 
 .c {
-  height: 25%;
+  height: 14.3%; /* Adjusted height for new content */
+  width: 450px;
 }
 
 .p {
@@ -77,7 +76,6 @@
   align-items: center;
   margin: 10px;
   width: 400px;
-  /* height: 250px; */
 }
 
 .lii {
@@ -91,12 +89,17 @@
 .link {
   font-size: 20px;
 }
-.card {
+/* 
+.cards {
   animation-name: example;
   animation-duration: 3s;
   animation-fill-mode: both;
   position: relative;
+  transition: transform 0.3s ease-in-out;
+  z-index: -10;
+  opacity: 0.5;
 }
+
 @keyframes example {
   to {
     right: 0px;
@@ -105,12 +108,21 @@
     right: 500px;
   }
 }
+
 .card1 {
   animation-name: examples;
   animation-duration: 3s;
   animation-fill-mode: both;
   position: relative;
+  transition: transform 0.3s ease-in-out;
+  z-index: -10;
+  opacity: 0.5;
 }
+
+.card1:hover {
+  transform: scale(1.1);
+}
+
 @keyframes examples {
   to {
     top: 0px;
@@ -119,12 +131,21 @@
     top: 500px;
   }
 }
+
 .card2 {
   animation-name: exampless;
   animation-duration: 3s;
   animation-fill-mode: both;
   position: relative;
+  transition: transform 0.3s ease-in-out;
+  z-index: -10;
+  opacity: 0.5;
 }
+
+.card2:hover {
+  transform: scale(1.1);
+}
+
 @keyframes exampless {
   to {
     left: 0px;
@@ -132,7 +153,7 @@
   from {
     left: 500px;
   }
-}
+} */
 
 .whatsapp {
   color: #00ff00;
@@ -142,16 +163,41 @@
 .cl {
   padding-left: 23%;
 }
+
 .cll {
-  padding-left: 50px;
+  margin-right: 35px;
+  text-align: right;
 }
+
 .clll {
-  margin-left: 15px;
-  padding: 7px;
+  margin-left: 0px;
+  padding: 5.5px;
+  width: 140px;
   font-size: larger;
 }
+
 .cli {
-  margin-left: 5px;
-  padding: 7px;
+  margin-left: -10px;
+  padding: 4px;
   font-size: larger;
 }
+
+.cllli {
+  padding: 3.6px;
+  /* font-size: large; */
+}
+
+.solo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-body {
+  background-color: whitesmoke;
+}
+
+/* .list-group li {
+  background-color: whitesmoke;
+} */

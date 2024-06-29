@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import Scanner from "../../assets/Scanner_120.jpg";
+import Scanner from "../../assets/scanner20.jpg";
 import "./Payment.css";
 import Paytm from "../../assets/paytm.jpg";
 import phonepe from "../../assets/phonepe.jpg";
@@ -35,7 +35,7 @@ const Payment = () => {
         setTransactions(response.data);
         setUser(response.data[0].username);
         setfreefire(response.data[0].freefireid);
-        setphonenos(response.data[0].phoneno)
+        setphonenos(response.data[0].phoneno);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching transactions:", error);
@@ -60,7 +60,7 @@ const Payment = () => {
         freefireid,
         upiid,
         status,
-        phoneno
+        phoneno,
       })
       .then(navigate("/home"))
       .catch(err)(console.log(err));
