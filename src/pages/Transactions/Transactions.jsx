@@ -44,7 +44,7 @@ const Transactions = () => {
               username
             </td>
             <td style={{ color: "orange" }} className="tata">
-              freefireid
+              Name
             </td>
             <td style={{ color: "orange" }} className="tata">
               upiId
