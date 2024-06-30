@@ -54,7 +54,7 @@ const Payment = () => {
 
   const handleSubmit =(e) => {
     e.preventDefault();
-    axios.post("https://firescrimbackend.onrender.com/payment",{username,freefireid,upiid,status})
+    axios.post("https://firescrimbackend.onrender.com/payment",{username,freefireid,upiid,phoneno,status})
     .then(result => {console.log(result) 
       if(result.data == "The upiid already exists"){
         alert("The upiid already exists please check My Transactions page")
