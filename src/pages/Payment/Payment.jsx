@@ -52,18 +52,20 @@ const Payment = () => {
   const status = "Pending";
   const phoneno = phonenos;
 
-  const handleSubmit = (e) => {
+  const handleSubmit =(e) => {
     e.preventDefault();
-    axios
-      .post("https://firescrimbackend.onrender.com/payment", {
-        username,
-        freefireid,
-        upiid,
-        status,
-        phoneno,
-      })
-      .then(navigate("/home"))
-      .catch(err)(console.log(err));
+    axios.post("https://firescrimbackend.onrender.com/payment",{username,freefireid,upiid,status})
+    .then(result => {console.log(result) 
+      if(result.data == "The upiid already exists"){
+        alert("The upiid already exists please check My Transactions page")
+        // alert("user already exists")
+      }
+      else{
+        alert("Registration success")
+        navigate("/transactions")
+      }
+  })
+  .catch(err => console.log(err))
   };
 
   return (
