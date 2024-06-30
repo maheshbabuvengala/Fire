@@ -109,273 +109,38 @@ const Card = () => {
           </div>
         </div>
       </div>
-      <div className="container main">
-        <div className="row wrap container">
-          <div className="col-sm  box card">
-            <div className="row c">
-              <div className="col cll">
-                <h4 className="p  text-right" style={{ fontWeight: "800" }}>
-                  Map: Bermuda
-                </h4>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h4 className="p" style={{ fontWeight: "800" }}>
-                  Date: 30/06/24
-                </h4>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Type: Squad
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Time: 06:00 PM
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col"></div>
-              <div className="col-5">
-                <button className="btn btn-md btn-danger cllli">
-                  <Link
-                    to={"/payment"}
-                    style={{ textDecoration: "none", color: "white" }}
-                  >
-                    Register <span>&#8377;</span>20
-                  </Link>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm  box card">
-            <div className="row c">
-              <div className="col cll">
-                <h4 className="p" style={{ fontWeight: "800" }}>
-                  Map: Bermuda
-                </h4>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h4 className="p" style={{ fontWeight: "800" }}>
-                  Date: 30/06/24
-                </h4>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Type: Squad
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Time: 06:00 PM
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col"></div>
-              <div className="col-5">
-                <button className="btn btn-md btn-danger cllli">
-                  <Link
-                    to={"/payment"}
-                    style={{ textDecoration: "none", color: "white" }}
-                  >
-                    Register <span>&#8377;</span>120
-                  </Link>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm  box card">
-            <div className="row c">
-              <div className="col cll">
-                <h4 className="p" style={{ fontWeight: "800" }}>
-                  Map: Bermuda
-                </h4>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h4 className="p" style={{ fontWeight: "800" }}>
-                  Date: 30/06/24
-                </h4>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Type: Squad
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Time: 06:00 PM
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col"></div>
-              <div className="col-5">
-                <button className="btn btn-md btn-danger cllli">
-                  <Link
-                    to={"/payment"}
-                    style={{ textDecoration: "none", color: "white" }}
-                  >
-                    Register <span>&#8377;</span>120
-                  </Link>
-                </button>
-              </div>
-            </div>
+      <div className="card-container">
+        <div className="cardss">
+          <div className="card-body">
+            <p className="card-title h4" style={{ color: 'white' }}>Map: Bermuda</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Type : Squad</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Time : 06:00pm</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Entry Fee: 120</p>
+            <Link to="#" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
           </div>
         </div>
-        {/* </div> */}
-
-        {/* <div className="container main">
-        <div className="row wrap container">
-          <div className="col-sm  box card">
-            <div className="row c">
-              <div className="col cll">
-                <h4 className="p" style={{ fontWeight: "800" }}>
-                  Map: Bermuda
-                </h4>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h4 className="p" style={{ fontWeight: "800" }}>
-                  Date:30/06/24
-                </h4>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Type: Squad
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Time:06:00 PM
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col"></div>
-              <div className="col-5">
-                <button className="btn btn-md btn-danger cllli">
-                  <Link
-                    to={"/payment"}
-                    style={{ textDecoration: "none", color: "white" }}
-                  >
-                    Register <span>&#8377;</span>120
-                  </Link>
-                </button>
-              </div>
-            </div>
+        <div className="cardss">
+          <div className="card-body">
+            <p className="card-title h4" style={{ color: 'white' }}>Map: Bermuda</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Type : Squad</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Time : 06:00pm</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Entry Fee: 120</p>
+            {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+            <Link to="#" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
           </div>
-          <div className="col-sm-2  box card1">
-            <div className="row c">
-              <div className="col cl">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Map: Bermuda
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cl">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Date:30/06/24
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Type: Squad
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cl">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Time:06:00 PM
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col"></div>
-              <div className="col-5">
-                <button className="btn btn-md btn-danger cli">
-                  <Link
-                    to={"/payment"}
-                    style={{ textDecoration: "none", color: "white" }}
-                  >
-                    Register <span>&#8377;</span>120
-                  </Link>
-                </button>
-              </div>
-            </div>
+        </div>
+        <div className="cardss">
+          <div className="card-body">
+            <p className="card-title h4" style={{ color: 'white' }}>Map: Bermuda</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Type : Squad</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Time : 06:00pm</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Entry Fee: 120</p>
+            {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+            <Link to="#" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
           </div>
-          <div className="col-sm-2  box card2">
-            <div className="row c">
-              <div className="col cl">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Map: Bermuda
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cl">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Date:30/06/24
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cll">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Type: Squad
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col cl">
-                <h3 className="p" style={{ fontWeight: "800" }}>
-                  Time:06:00 PM
-                </h3>
-              </div>
-            </div>
-            <div className="row c">
-              <div className="col"></div>
-              <div className="col-5">
-                <button className="btn btn-md btn-danger cli">
-                  <Link
-                    to={"/payment"}
-                    style={{ textDecoration: "none", color: "white" }}
-                  >
-                    Register <span>&#8377;</span>120
-                  </Link>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div> */}
+        </div>
       </div>
+
     </div>
   );
 };
