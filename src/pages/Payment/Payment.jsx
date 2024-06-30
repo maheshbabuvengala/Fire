@@ -34,7 +34,7 @@ const Payment = () => {
         );
         setTransactions(response.data);
         setUser(response.data[0].username);
-        setfreefire(response.data[0].freefireid);
+        setfreefire(response.data[0].name);
         setphonenos(response.data[0].phoneno);
         setLoading(false);
       } catch (error) {
