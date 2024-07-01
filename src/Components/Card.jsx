@@ -29,9 +29,11 @@ const Card = () => {
             </li>
           </ul>
           <div class="card-body">
-            <button className="btn btn-md btn-danger clll">
+            <button className="btn btn-md btn-danger clll" onClick={() => {
+                alert("registers are enable soon");
+              }}>
               <Link
-                to={"/payment"}
+                /*to={"/payment"}*/
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
@@ -63,9 +65,11 @@ const Card = () => {
             </li>
           </ul>
           <div class="card-body">
-            <button className="btn btn-md btn-danger clll">
+            <button className="btn btn-md btn-danger clll" onClick={() => {
+                alert("registers are enable soon");
+              }}>
               <Link
-                to={"/payment"}
+                /*to={"/payment"}*/
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
@@ -98,9 +102,11 @@ const Card = () => {
             </li>
           </ul>
           <div class="card-body">
-            <button className="btn btn-md btn-danger clll">
+            <button className="btn btn-md btn-danger clll" onClick={() => {
+                alert("registers are enable soon");
+              }}>
               <Link
-                to={"/payment"}
+                /*to={"/payment"}*/
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
