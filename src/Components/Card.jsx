@@ -30,7 +30,7 @@ const Card = () => {
           </ul>
           <div class="card-body">
             <button className="btn btn-md btn-danger clll" onClick={() => {
-                alert("registers are enable soon");
+                alert("registrations are enable soon");
               }}>
               <Link
                 /*to={"/payment"}*/
@@ -66,7 +66,7 @@ const Card = () => {
           </ul>
           <div class="card-body">
             <button className="btn btn-md btn-danger clll" onClick={() => {
-                alert("registers are enable soon");
+                alert("registrations are enable soon");
               }}>
               <Link
                 /*to={"/payment"}*/
@@ -103,7 +103,7 @@ const Card = () => {
           </ul>
           <div class="card-body">
             <button className="btn btn-md btn-danger clll" onClick={() => {
-                alert("registers are enable soon");
+                alert("registrations are enable soon");
               }}>
               <Link
                 /*to={"/payment"}*/
