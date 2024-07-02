@@ -122,7 +122,7 @@ const Card = () => {
             <p className="card-title h4" style={{ color: 'white' }}>Type : Squad</p>
             <p className="card-title h4" style={{ color: 'white' }}>Time : 06:00pm</p>
             <p className="card-title h4" style={{ color: 'white' }}>Entry Fee: 120</p>
-            <Link to="#" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
+            <Link to="/paymentsquad" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
           </div>
         </div>
         <div className="cardss">
@@ -132,7 +132,7 @@ const Card = () => {
             <p className="card-title h4" style={{ color: 'white' }}>Time : 06:00pm</p>
             <p className="card-title h4" style={{ color: 'white' }}>Entry Fee: 120</p>
             {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-            <Link to="#" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
+            <Link to="paymentsquad" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
           </div>
         </div>
         <div className="cardss">
@@ -142,7 +142,7 @@ const Card = () => {
             <p className="card-title h4" style={{ color: 'white' }}>Time : 06:00pm</p>
             <p className="card-title h4" style={{ color: 'white' }}>Entry Fee: 120</p>
             {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-            <Link to="#" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
+            <Link to="paymentsquad" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
           </div>
         </div>
       </div>

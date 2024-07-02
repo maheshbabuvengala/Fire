@@ -6,6 +6,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Transactions = () => {
   const [items, setItems] = useState([]);
+  const [squad,setSquad] =useState([]);
 
   useEffect(() => {
     const fetchTransactions = async () => {
@@ -30,14 +31,37 @@ const Transactions = () => {
     fetchTransactions();
   }, []);
 
+  useEffect(() => {
+    const fetchTransactions = async () => {
+      try {
+        const response = await axios.get(
+          "https://firescrimbackend.onrender.com/squad",
+          { withCredentials: true }
+        );
+        if (response.data && response.data.length > 0) {
+          setSquad(response.data);
+        } else {
+          setError("No transactions found.");
+        }
+        setLoading(false);
+      } catch (error) {
+        //console.error("Error fetching transactions:", error);
+        setError("Error fetching transactions. Please try again later.");
+        setLoading(false);
+      }
+    };
+
+    fetchTransactions();
+  }, []);
+
   return (
     <div className="App">
       <Navbar />
       <div className="head">
         <h1 style={{ color: "white" }}>Your Transactions</h1>
       </div>
-      {/* <Link to="/login">Login page</Link> */}
-      <div className="ttable">
+      <h3 style={{textAlign:"center",color:"white",marginTop:"10px"}}>Solo Transactions</h3>
+      <div className="ttable" style={{marginTop:"20px"}}>
         <table className="tata">
           <tr className="tata">
             <td style={{ color: "orange" }} className="tata">
@@ -64,10 +88,39 @@ const Transactions = () => {
             ))
           ) : (
             <tr className="tata">
-              {/* <td className='tata'>satyakarthik</td>
-          <td className='tata'>655498522</td>
-          <td className='tata'>5452236565</td>
-          <td className='tata'>Success</td> */}
+              <td colSpan="4">No Transcations found</td>
+            </tr>
+          )}
+        </table>
+      </div>
+      <h3 style={{textAlign:"center",color:"white",marginTop:"20px"}}>Squad Transactions</h3>
+      <div className="ttable">
+        <table className="tata">
+          <tr className="tata">
+            <td style={{ color: "orange" }} className="tata">
+              username
+            </td>
+            <td style={{ color: "orange" }} className="tata">
+              Name
+            </td>
+            <td style={{ color: "orange" }} className="tata">
+              upiId
+            </td>
+            <td style={{ color: "orange" }} className="tata">
+              status
+            </td>
+          </tr>
+          {squad.length > 0 ? (
+            squad.map((item, index) => (
+              <tr key={index} className="tata">
+                <td className="tata">{item.username}</td>
+                <td className="tata">{item.freefireid}</td>
+                <td className="tata">{item.upiid}</td>
+                <td className="tata">{item.status}</td>
+              </tr>
+            ))
+          ) : (
+            <tr className="tata">
               <td colSpan="4">No Transcations found</td>
             </tr>
           )}
