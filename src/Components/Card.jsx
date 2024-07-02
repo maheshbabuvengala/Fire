@@ -41,7 +41,7 @@ const Card = () => {
             </button>
           </div>
         </div>
-        <div class="card" style={{ width: "23rem", margin: "10px" }}>
+        {/* <div class="card" style={{ width: "23rem", margin: "10px" }}>
           <img class="card-img-top" src={cardbg} alt="Card image cap" />
           <div class="card-body">
             <h5 class="card-title">Tournament</h5>
@@ -69,14 +69,14 @@ const Card = () => {
                 alert("registrations are enable soon");
               }}>
               <Link
-                /*to={"/payment"}*/
+                to={"/payment"}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
               </Link>
             </button>
           </div>
-        </div>
+        </div> */}
         <div class="card" style={{ width: "23rem", margin: "10px" }}>
           <img class="card-img-top" src={cardbg} alt="Card image cap" />
           <div class="card-body">
@@ -121,25 +121,28 @@ const Card = () => {
             <p className="card-title h4" style={{ color: 'white' }}>Map: Bermuda</p>
             <p className="card-title h4" style={{ color: 'white' }}>Type : Squad</p>
             <p className="card-title h4" style={{ color: 'white' }}>Time : 06:00pm</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Date : 04/07/24</p>
             <p className="card-title h4" style={{ color: 'white' }}>Entry Fee: 120</p>
             <Link to="/paymentsquad" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
           </div>
         </div>
-        <div className="cardss">
+        {/* <div className="cardss">
           <div className="card-body">
             <p className="card-title h4" style={{ color: 'white' }}>Map: Bermuda</p>
             <p className="card-title h4" style={{ color: 'white' }}>Type : Squad</p>
             <p className="card-title h4" style={{ color: 'white' }}>Time : 06:00pm</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Date : 04/07/24</p>
             <p className="card-title h4" style={{ color: 'white' }}>Entry Fee: 120</p>
             {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-            <Link to="paymentsquad" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
-          </div>
-        </div>
+            {/*<Link to="paymentsquad" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}
+          {/* </div>
+        </div> */} 
         <div className="cardss">
           <div className="card-body">
             <p className="card-title h4" style={{ color: 'white' }}>Map: Bermuda</p>
             <p className="card-title h4" style={{ color: 'white' }}>Type : Squad</p>
             <p className="card-title h4" style={{ color: 'white' }}>Time : 06:00pm</p>
+            <p className="card-title h4" style={{ color: 'white' }}>Date : 04/07/24</p>
             <p className="card-title h4" style={{ color: 'white' }}>Entry Fee: 120</p>
             {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
             <Link to="paymentsquad" className="btn btn-primary">Register Now</Link> {/* Use to instead of href for react-router-dom */}

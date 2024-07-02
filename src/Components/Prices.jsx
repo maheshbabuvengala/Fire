@@ -9,13 +9,13 @@ const Prices = () => {
     <div className="container">
       <div className="row container wrap">
         <div className="col-sm-4 price">
-          <Price img={ba1} t1={"1"} t2={"st"} amount={500} />
+          <Price img={ba1} t1={"1"} t2={"st"} amount={480} />
         </div>
         <div className="col-sm-4 price">
-          <Price img={ba2} t1={"2"} t2={"nd"} amount={250} />
+          <Price img={ba2} t1={"2"} t2={"nd"} amount={280} />
         </div>
         <div className="col-sm-4 price">
-          <Price img={ba3} t1={"3"} t2={"rd"} amount={120} />
+          <Price img={ba3} t1={"3"} t2={"rd"} amount={160} />
         </div>
       </div>
     </div>

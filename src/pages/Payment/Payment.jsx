@@ -107,7 +107,7 @@ const Payment = () => {
               </button>
             </form>
           </div>
-          <a href="upi://pay?pa=9381574024-2@okbizaxis&pn=Mr%20%20VELIVELA%20%20SATYAK&am=20&mc=5411&aid=uGICAgMCRy8baWQ&ver=01&mode=01&tr=BCR2DN4TVHQ6J5DC"><h4>Scan Or Click Here</h4></a>
+          {/* <a href="upi://pay?pa=9381574024-2@okbizaxis&pn=Mr%20%20VELIVELA%20%20SATYAK&am=20&mc=5411&aid=uGICAgMCRy8baWQ&ver=01&mode=01&tr=BCR2DN4TVHQ6J5DC"><h4>Scan Or Click Here</h4></a> */}
           <div className="right">
             <img src={Scanner} />
           </div>
