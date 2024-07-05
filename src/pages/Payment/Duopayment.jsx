@@ -54,7 +54,7 @@ const Duopayment = () => {
 
   const handleSubmit =(e) => {
     e.preventDefault();
-    axios.post("https://firescrimbackend.onrender.com/paymentduo",{username,freefireid,upiid,phoneno,status})
+    axios.post("https://firescrimbackend.onrender.com/paymentss",{username,freefireid,upiid,phoneno,status})
     .then(result => {console.log(result) 
       if(result.data == "The upiid already exists"){
         alert("The upiid already exists please check My Transactions page")
