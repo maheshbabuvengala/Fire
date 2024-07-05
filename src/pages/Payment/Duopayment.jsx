@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import Scanner from "../../assets/duo.jpg";
+import Scanner from "../../assets/scanner20.jpg";
 import "./Payment.css";
 import Paytm from "../../assets/paytm.jpg";
 import phonepe from "../../assets/phonepe.jpg";
@@ -10,7 +10,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
 
-const Paymentsquad = () => {
+const Duopayment = () => {
   const [free, setfree] = useState("");
   const [usernames, setUsernames] = useState("");
 
@@ -47,7 +47,6 @@ const Paymentsquad = () => {
     fetchTransactions();
   }, []);
 
-
   const username = user;
   const freefireid = freefire;
   const status = "Pending";
@@ -55,7 +54,7 @@ const Paymentsquad = () => {
 
   const handleSubmit =(e) => {
     e.preventDefault();
-    axios.post("https://firescrimbackend.onrender.com/payments",{username,freefireid,upiid,phoneno,status})
+    axios.post("https://firescrimbackend.onrender.com/duo",{username,freefireid,upiid,phoneno,status})
     .then(result => {console.log(result) 
       if(result.data == "The upiid already exists"){
         alert("The upiid already exists please check My Transactions page")
@@ -118,4 +117,4 @@ const Paymentsquad = () => {
   );
 };
 
-export default Paymentsquad;
+export default Duopayment;

@@ -12,6 +12,7 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import Terms from "./pages/Terms";
 import EditInfo from "./pages/EditInfo/EditInfo";
 import Paymentsquad from "./pages/Payment/Paymentsquad";
+import Duopayment from "./pages/Payment/Duopayment";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/paymentsquad" element={<Paymentsquad />} />
+          <Route path="/duopayment" element={<Duopayment />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/termsandconditions" element={<TermsAndConditions />} />

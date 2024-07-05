@@ -7,6 +7,7 @@ import Navbar from "../Navbar/Navbar";
 const Transactions = () => {
   const [items, setItems] = useState([]);
   const [squad,setSquad] =useState([]);
+  const [duos,setDuo] =useState([]);
 
   useEffect(() => {
     const fetchTransactions = async () => {
@@ -40,6 +41,30 @@ const Transactions = () => {
         );
         if (response.data && response.data.length > 0) {
           setSquad(response.data);
+        } else {
+          setError("No transactions found.");
+        }
+        setLoading(false);
+      } catch (error) {
+        //console.error("Error fetching transactions:", error);
+        setError("Error fetching transactions. Please try again later.");
+        setLoading(false);
+      }
+    };
+
+    fetchTransactions();
+  }, []);
+
+
+  useEffect(() => {
+    const fetchTransactions = async () => {
+      try {
+        const response = await axios.get(
+          "https://firescrimbackend.onrender.com/duo",
+          { withCredentials: true }
+        );
+        if (response.data && response.data.length > 0) {
+          setDuo(response.data);
         } else {
           setError("No transactions found.");
         }
@@ -91,9 +116,23 @@ const Transactions = () => {
               <td colSpan="4">No Transcations found</td>
             </tr>
           )}
+          {duos.length > 0 ? (
+            duos.map((duo, index) => (
+              <tr key={index} className="tata">
+                <td className="tata">{duo.username}</td>
+                <td className="tata">{duo.freefireid}</td>
+                <td className="tata">{duo.upiid}</td>
+                <td className="tata">{duo.status}</td>
+              </tr>
+            ))
+          ) : (
+            <tr className="tata">
+              {/* <td colSpan="4">No Transcations found</td> */}
+            </tr>
+          )}
         </table>
       </div>
-      <h3 style={{textAlign:"center",color:"white",marginTop:"20px"}}>Squad Transactions</h3>
+      <h3 style={{textAlign:"center",color:"white",marginTop:"20px"}}>Duo Transactions</h3>
       <div className="ttable">
         <table className="tata">
           <tr className="tata">

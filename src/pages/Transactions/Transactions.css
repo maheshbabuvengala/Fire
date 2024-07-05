@@ -16,7 +16,7 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20%;
+  height: auto;
 }
 td {
   color: rgb(30, 180, 210);
