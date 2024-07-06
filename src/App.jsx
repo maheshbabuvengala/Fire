@@ -1,4 +1,5 @@
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react"
 import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
