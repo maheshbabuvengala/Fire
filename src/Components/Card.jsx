@@ -29,12 +29,12 @@ const Card = () => {
             </li>
           </ul>
           <div class="card-body">
-            <button className="btn btn-md btn-danger clll" >
-            {/* onClick={() => {
+            <button className="btn btn-md btn-danger clll" 
+            onClick={() => {
                 alert("registrations are enable soon");
-              }} */}
+              }}>
               <Link
-                to={"/payment"}
+{/*                 to={"/payment"} */}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
