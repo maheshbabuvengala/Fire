@@ -29,17 +29,18 @@ const Card = () => {
             </li>
           </ul>
           <div class="card-body">
-            <button className="btn btn-md btn-danger clll" 
-            onClick={() => {
-                alert("Room is completed please register for the next 6pm match");
-              }}>
+            <button className="btn btn-md btn-danger clll" >
+              {/* onClick={() => {
+                alert("registrations are enable soon");
+              }} */}
               <Link
-                 /*to={"/payment"} */
+                to={"/duopayment"}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
               </Link>
             </button>
+            
           </div>
         </div>
         {/* <div class="card" style={{ width: "23rem", margin: "10px" }}>
@@ -103,12 +104,12 @@ const Card = () => {
             </li>
           </ul>
           <div class="card-body">
-            <button className="btn btn-md btn-danger clll" >
-              {/* onClick={() => {
-                alert("registrations are enable soon");
-              }} */}
+            <button className="btn btn-md btn-danger clll" 
+            onClick={() => {
+                alert("Room is completed please register for the next 6pm match");
+              }}>
               <Link
-                to={"/duopayment"}
+                 /*to={"/payment"} */
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
