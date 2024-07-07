@@ -34,7 +34,7 @@ const Card = () => {
                 alert("Room is completed please register for the next 6pm match");
               }}>
               <Link
-{/*                 to={"/payment"} */}
+                 /*to={"/payment"} */
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
