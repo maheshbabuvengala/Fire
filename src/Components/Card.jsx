@@ -30,11 +30,11 @@ const Card = () => {
           </ul>
           <div class="card-body">
             <button className="btn btn-md btn-danger clll" >
-              {/* onClick={() => {
+              onClick={() => {
                 alert("registrations are enable soon");
-              }} */}
+              }} 
               <Link
-                to={"/duopayment"}
+                //to={"/duopayment"}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
@@ -104,12 +104,12 @@ const Card = () => {
             </li>
           </ul>
           <div class="card-body">
-            <button className="btn btn-md btn-danger clll" 
-            onClick={() => {
+            <button className="btn btn-md btn-danger clll" >
+{/*             onClick={() => {
                 alert("Room is completed please register for the next 6pm match");
-              }}>
+              }} */}
               <Link
-                 /*to={"/payment"} */
+                 to={"/duopayment"} 
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
