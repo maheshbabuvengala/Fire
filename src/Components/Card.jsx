@@ -30,9 +30,6 @@ const Card = () => {
           </ul>
           <div class="card-body">
             <button className="btn btn-md btn-danger clll" >
-              onClick={() => {
-                alert("registrations are enable soon");
-              }} 
               <Link
                 //to={"/duopayment"}
                 style={{ textDecoration: "none", color: "white" }}
