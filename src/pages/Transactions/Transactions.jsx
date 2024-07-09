@@ -113,7 +113,7 @@ const Transactions = () => {
             ))
           ) : (
             <tr className="tata">
-              //<td colSpan="4">No Transcations found</td>
+              {/*<td colSpan="4">No Transcations found</td>*/}
             </tr>
           )}
           {duos.length > 0 ? (
