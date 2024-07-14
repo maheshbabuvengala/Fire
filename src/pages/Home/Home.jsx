@@ -54,10 +54,10 @@ const Home = () => {
       <Banner />
 
       <div className="container my-4">
-        <h1>
+        <h1 className="zoom">
           <span className="text-success">REGISTER </span>
           <span className="text-danger">NOW </span>
-          <span>&#127881;</span>
+          <span className="register">&#127881;</span>
         </h1>
         <p className="li"></p>
       </div>
@@ -82,14 +82,15 @@ const Home = () => {
         </h1>
         <p className="li"></p>
 
-        <div className="row wrap">
+        <div className="row wrap fotter">
           <div className="col-sm-4">
             <h5>
-              Instagram <FaSquareInstagram />
+              <a href="https://www.instagram.com/firescrim_?igsh=MXhrNTBoaXN0dzBqYw==" className="insta">Instagram <FaSquareInstagram /></a>
+              
             </h5>
           </div>
           <div className="col-sm-4">
-            <h5>
+            <h5 className="tele">
               Telegram <BsTelegram />
             </h5>
           </div>

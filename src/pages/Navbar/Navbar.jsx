@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <div className={`container-fluid hi ${sticky ? "fixed hi" : ""}`}>
       <div className="container">
-        <nav className="navbar navbar-expand-lg ">
+        <nav className="navbar navbar-expand-lg " >
           <div className="container-fluid">
             <Link className="navbar-brand logoo" to="/home">
               <img src={Logo} alt="" className="logo" />
@@ -44,17 +44,17 @@ const Navbar = () => {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link className="nav-link " aria-current="page" to="/home">
-                    <h3>Home</h3>
+                    <h3 className="h3">Home</h3>
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/transactions">
-                    <h3>My Transactions</h3>
+                    <h3 className="h3">My Transactions</h3>
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/profile">
-                    <h3>My Profile</h3>
+                    <h3 className="h3">My Profile</h3>
                   </Link>
                 </li>
               </ul>

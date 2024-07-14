@@ -113,7 +113,7 @@ const Transactions = () => {
             ))
           ) : (
             <tr className="tata">
-              {/*<td colSpan="4">No Transcations found</td>*/}
+              <td colSpan="4">No Transcations found</td>
             </tr>
           )}
           {duos.length > 0 ? (
@@ -132,7 +132,7 @@ const Transactions = () => {
           )}
         </table>
       </div>
-      <h3 style={{textAlign:"center",color:"white",marginTop:"20px"}}>Duo Transactions</h3>
+      <h3 style={{textAlign:"center",color:"white",marginTop:"20px"}}>Squad Transactions</h3>
       <div className="ttable">
         <table className="tata">
           <tr className="tata">
