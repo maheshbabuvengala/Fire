@@ -31,7 +31,7 @@ const Card = () => {
           <div class="card-body">
             <button className="btn btn-md btn-danger clll" >
               <Link
-                to={"/duopayment"}
+                to={""}
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
@@ -70,7 +70,7 @@ const Card = () => {
                 alert("Room is completed please register for the next 6pm match");
               }} */}
               <Link
-                 to={"/duopayment"} 
+                 to={"/t"} 
                 style={{ textDecoration: "none", color: "white" }}
               >
                 Register
